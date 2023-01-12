@@ -88,7 +88,7 @@ function writeSearchHistory(array) {
 }
 
 $("#submitCity").click(function() {
-    preventDefault();
+    event.preventDefault();
     let cityName = $("#cityInput").val();
     returnCurrentWeather(cityName);
     returnWeatherForecast(cityName);
